@@ -1,0 +1,18 @@
+.roller{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.roller svg{
+    margin: 2rem 0;
+    animation: rolling 0.8s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+}
+@keyframes rolling {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

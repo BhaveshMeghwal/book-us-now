@@ -1,0 +1,60 @@
+
+.container {
+    margin: 2rem auto;
+    width: 100vw;
+}
+
+.upcoming_events-heading {
+    display: flex;
+    align-items: center;
+    margin: 0 5rem;
+    font-size: 18px;
+    color: #1E2022;
+    font-weight: 500;
+}
+
+.upcoming_events-card_container {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 10px;
+    justify-content: start;
+}
+
+.upcoming_event-card {
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    height: 356px;
+    margin: 1rem;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.upcoming_event-card-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.upcoming_event-card-image::after{
+    content: attr();
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+height: 2rem;
+z-index: 10;
+background: #00000024;
+}
+
+.upcoming_event-card_content {
+    padding: 0 14px 14px;
+}
+
